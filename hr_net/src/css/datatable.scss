@@ -2,13 +2,14 @@
 .datatable{
     //  border: solid blue 1px;
     width: 90%;
+    font-size: large;
 
 
 }
 
 .DTbody{
     // border: solid yellow 1px;
-
+background-color:lightblue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +26,7 @@
     padding-top: 2rem;
     padding-right: 1rem;
     color: rgb(24, 110, 207);
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
 
 
@@ -52,9 +53,9 @@ gap: 1rem;
 
 .usemock{
 
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
-    color: orange;
+    color:rgb(24, 110, 207);
 
 
 }
