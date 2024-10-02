@@ -1,0 +1,53 @@
+@import url('./_mixins.scss');
+@import url('./_variables.scss');
+@import url('./datatable.scss');
+@import url('./datepicker.scss');
+@import url('./employeeform.scss');
+@import url('./modal.scss');
+@import url('./selectmenu.scss');
+
+
+
+body {
+  margin: 0;
+  background-color: lightblue;
+  // border: solid red 1px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height:100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.CEbody,.ELbody{
+  // border: solid green 2px ;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  z-index: 2;
+  padding-bottom: 3rem;
+
+}
+
+.listlink{
+  display: 'inline';
+  width:'12rem';
+  margin:'2rem';
+  color: rgb(24, 110, 207);
+  font-size: larger;
+  font-weight: bold;
+}
+
+#root{
+  // background-color: aqua;
+  height:100vh;
+
+}

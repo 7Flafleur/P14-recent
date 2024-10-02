@@ -1,0 +1,60 @@
+
+.datatable{
+    //  border: solid blue 1px;
+    width: 90%;
+
+
+}
+
+.DTbody{
+    // border: solid yellow 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   width:100%;
+    max-width: 1440px;
+
+    margin:auto;
+    overflow-y: hidden;
+
+}
+
+.homelink{
+    padding-top: 2rem;
+    padding-right: 1rem;
+    color: rgb(24, 110, 207);
+    font-size: larger;
+    font-weight: bold;
+
+
+}
+
+
+.ontopoftable{
+    // border:solid red 1px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.searchdiv{
+display: flex;
+gap: 1rem;
+
+}
+
+.search{
+    font-size: x-large;
+}
+
+.usemock{
+
+    font-size: large;
+    font-weight: bold;
+    color: orange;
+
+
+}
