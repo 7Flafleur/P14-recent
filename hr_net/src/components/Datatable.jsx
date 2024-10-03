@@ -4,7 +4,7 @@ import "ag-grid-community/styles/ag-theme-quartz.css";
 import { useSelector } from 'react-redux';
 import { mockUsers } from '../utils/MockUsers';
 import { Link } from "react-router-dom";
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Datatable() {
 
@@ -17,9 +17,9 @@ export default function Datatable() {
 
     const usingMock = users.length === 0;
 
-  const [filteredList, setFilteredList] = useState([]);
+    const [filteredList, setFilteredList] = useState([]);
 
-//   console.log("default filtered list",filteredList)
+    //   console.log("default filtered list",filteredList)
 
 
 
@@ -51,12 +51,12 @@ export default function Datatable() {
 
     useEffect(() => {
         setFilteredList(employeeList);
-    },[employeeList]);
+    }, [employeeList]);
 
 
     const rowData = filteredList;
 
-    console.log("Rowdata", rowData)
+    // console.log("Rowdata", rowData)
 
     //useEffect []
 
@@ -67,8 +67,8 @@ export default function Datatable() {
                 {usingMock && <span className='usemock'>Using mock data!</span>}
                 <p className='searchdiv'><input type='text' placeholder='Search' onChange={searchList}></input> </p>
             </div>
-            <div className='datatable ag-theme-quartz' style={{ height: 700, width: '100%',fontSize:"18px" }}>
-                <AgGridReact rowData={rowData} columnDefs={colDef} pagination={true} paginationPageSizeSelector={[2,10,25,50,100]}/>
+            <div className='datatable ag-theme-quartz' style={{ height: 700, width: '100%', fontSize: "18px" }}>
+                <AgGridReact rowData={rowData} columnDefs={colDef} pagination={true} paginationPageSizeSelector={[2, 10, 25, 50, 100]} />
             </div>
             <Link className="homelink" to="/">Home</Link>
         </div>
