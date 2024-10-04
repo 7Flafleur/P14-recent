@@ -94,7 +94,6 @@ export default function EmployeeForm() {
         if (validate()) {
             dispatch(addUser(formData));
             openModal()
-
         }
     };
 
@@ -102,7 +101,6 @@ export default function EmployeeForm() {
         e.preventDefault();
         setFormData(emptyFormState);
         setErrors({});
-
     };
 
     return (

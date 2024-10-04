@@ -56,9 +56,6 @@ export default function Datatable() {
 
     const rowData = filteredList;
 
-    // console.log("Rowdata", rowData)
-
-    //useEffect []
 
     return (
         <div className="DTbody">
@@ -68,7 +65,7 @@ export default function Datatable() {
                 <p className='searchdiv'><input type='text' placeholder='Search' onChange={searchList}></input> </p>
             </div>
             <div className='datatable ag-theme-quartz' style={{ height: 700, width: '100%', fontSize: "18px" }}>
-                <AgGridReact rowData={rowData} columnDefs={colDef} pagination={true} paginationPageSizeSelector={[2, 10, 25, 50, 100]} />
+                <AgGridReact rowData={rowData} columnDefs={colDef} pagination={true} paginationPageSizeSelector={[ 10, 25, 50, 100]} />
             </div>
             <Link className="homelink" to="/">Home</Link>
         </div>
