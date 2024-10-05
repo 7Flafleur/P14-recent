@@ -11,8 +11,6 @@ export const AppRoutes = () => {
             <Routes>
                 <Route path="/" element={<CreateEmployeePage />} />
                 <Route path="/employee-list" element={<EmployeeList />} />
-
-
             </Routes>
         </Router>
     );
