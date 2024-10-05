@@ -5,6 +5,8 @@ import { addUser } from '../redux/UserListSlice';
 import { validName, isValidDob, isValidStartDate, isValidStreet, isUsZipCode } from '../utils/InputValidation';
 import Modal from '@pingolu/7pingolu-modal-package-test';
 
+
+
 export default function EmployeeForm() {
 
     const emptyFormState = {
@@ -19,7 +21,7 @@ export default function EmployeeForm() {
         department: ''
     }
 
-    const textContent = "Employee created!"
+    const textContent = "Employee created !"
 
     const [formData, setFormData] = useState(emptyFormState);
 
@@ -102,6 +104,11 @@ export default function EmployeeForm() {
         setFormData(emptyFormState);
         setErrors({});
     };
+
+    // const customStyles = {
+    //     background: { backgroundColor: 'pink', opacity:'0.8' },
+    //     content: { backgroundColor:'aquamarine', padding: '100px 100px', borderRadius: '100px',fontSize: '35px' },
+    //   };
 
     return (
         <div className="employeeform">
