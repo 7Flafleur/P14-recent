@@ -1,13 +1,9 @@
 
 import Datatable from "../components/Datatable";
-import { useSelector } from "react-redux";
-
 
 export default function EmployeeList() {
 
-    const userList= useSelector(state => state.userList)
 
-    // console.log("type of userlist", typeof(userList))
 
     return (
         <div className="ELbody">
