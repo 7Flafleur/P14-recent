@@ -19,6 +19,11 @@ export default function EmployeeForm() {
         department: ''
     }
 
+    //     const customStyles = {
+    //     background: { backgroundColor: 'pink', opacity:'0.8' },
+    //     content: { backgroundColor:'aquamarine', padding: '100px 100px', borderRadius: '100px',fontSize: '35px' },
+    //   };
+
     const textContent = "Employee created!"
 
     const [formData, setFormData] = useState(emptyFormState);
