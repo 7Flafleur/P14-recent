@@ -3,7 +3,7 @@ import Datatable from "../components/Datatable";
 import { useSelector } from "react-redux";
 
 
-export default function EmployeeList1() {
+export default function EmployeeList() {
 
     const userList= useSelector(state => state.userList)
 
