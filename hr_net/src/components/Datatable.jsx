@@ -64,6 +64,7 @@ export default function Datatable() {
                 {usingMock && <span className='usemock'>Using mock data!</span>}
                 <p className='searchdiv'><input type='text' placeholder='Search' onChange={searchList}></input> </p>
             </div>
+            {/******************************** * AGGridReact DATATABLE******************************** */}
             <div className='datatable ag-theme-quartz' style={{ height: 700, width: '100%', fontSize: "18px" }}>
                 <AgGridReact rowData={rowData} columnDefs={colDef} pagination={true} paginationPageSizeSelector={[ 10, 25, 50, 100]} />
             </div>
