@@ -19,11 +19,6 @@ export default function EmployeeForm() {
         department: ''
     }
 
-    //     const customStyles = {
-    //     background: { backgroundColor: 'pink', opacity:'0.8' },
-    //     content: { backgroundColor:'aquamarine', padding: '100px 100px', borderRadius: '100px',fontSize: '35px' },
-    //   };
-
     const textContent = "Employee created!"
 
     const [formData, setFormData] = useState(emptyFormState);
@@ -107,11 +102,20 @@ export default function EmployeeForm() {
         setFormData(emptyFormState);
         setErrors({});
     };
+/**************************************************CUSTOM STYLES DEMO******************************************************************* */
+    // const customStyles = {
+    //     background: { backgroundColor: 'pink', opacity:'0.8' },
+    //     content: { backgroundColor:'aquamarine', padding: '100px 100px', borderRadius: '100px',fontSize: '35px' },
+    //   };
+    //customStyles = {customStyles}
 
+/****************************************************************************************************************************************** */
     return (
         <div className="employeeform">
-            {isModalOpen && <Modal isOpen={isModalOpen} onClose={closeModal} textContent={textContent} />}
+        {/***************************************** * MODAL ******************************************************************************/}
+            {isModalOpen && <Modal isOpen={isModalOpen} onClose={closeModal} textContent={textContent}  />}
             <form className='outer form' onSubmit={handleSubmit}>
+        {/* ************************************************************************************************************************************ */}
                 <label>First name:
                     <input
                         type="text"
@@ -154,7 +158,6 @@ export default function EmployeeForm() {
                     {errors.startDate && <div className="invalid-feedback">{errors.startDate}</div>}
                 </label>
 
-                {/* Address Section */}
                 <p>Address</p>
                 <label>Street:
                     <input
@@ -176,6 +179,7 @@ export default function EmployeeForm() {
                     />
                     {errors.city && <div className="invalid-feedback">{errors.city}</div>}
                 </label>
+{/* *******************************************************SELECT DROPDOWN********************************************************************** */}
                 <label>State:
                     <select
                         name="state"
@@ -201,7 +205,7 @@ export default function EmployeeForm() {
                     />
                     {errors.zipCode && <div className="invalid-feedback">{errors.zipCode}</div>}
                 </label>
-
+{/* **********************************************************SELECT DROPDOWN******************************************************************** */}
                 <label>Department:
                     <select
                         name="department"
@@ -218,6 +222,7 @@ export default function EmployeeForm() {
                     </select>
                     {errors.department && <div className="invalid-feedback">{errors.department}</div>}
                 </label>
+ {/* ************************************************************************************************************************************************************ */}
                 <button className="save" type="submit">Save</button>
                 <button variant="secondary" className="clear" onClick={handleReset}>Clear</button>
             </form>
